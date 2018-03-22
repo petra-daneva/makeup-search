@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Make up Data</title>
+
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+    <script>
+        window.addEventListener('click', function(e){
+            if (document.getElementById("search-bar").contains(e.target) || document.getElementById("search-suggestions").contains(e.target)){
+                //do nothing
+                } else{
+                    if (document.getElementById("search-suggestions") != undefined){
+                        console.log(document.getElementById("search-suggestions"));
+                        document.getElementById("search-suggestions").style.visibility = "hidden";
+                    }
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+           <div id="logo">
+               <img src="https://i2.wp.com/flowarte.com/wp-content/uploads/2017/11/cropped-Logoforsite-01.png?fit=520%2C236&ssl=1" alt="">
+           </div>
+
+        </header>
+
+
+        <section>
+            <div id="search">
+                <a id="advanced-search-link" href="javascript:void(0)" onclick="loadAdvancedSearch()">Advanced Search</a>
+                <div id="advanced-search" style="visibility: hidden"></div>
+                <input onkeyup="sendInput(this.value)" type="text" id="search-bar" maxlength="25" placeholder="Search here. . .">
+                <div id="search-suggestions" style="visibility: hidden"></div>
+            </div>
+
+            <div id="content">
+
+                    <div id="gallery">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie7.jpg?itok=hviTke12" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie12.jpg?itok=YpZ-a5Wn" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie11.jpg?itok=8JthWWyz" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/ored1406_79_masterp_true_match_correcteur_dp_va.jpg?itok=iryfe9xV" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie9.jpg?itok=a0DJdrst" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie3.jpg?itok=T0qmvx5A" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"> Gallery </p>
+                    </div>
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie7.jpg?itok=hviTke12" style="width:100%" onclick="currentSlide(1)" alt="True Match">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie12.jpg?itok=YpZ-a5Wn" style="width:100%" onclick="currentSlide(2)" alt="True Match">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie11.jpg?itok=8JthWWyz" style="width:100%" onclick="currentSlide(3)" alt="True Match">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/ored1406_79_masterp_true_match_correcteur_dp_va.jpg?itok=iryfe9xV" style="width:100%" onclick="currentSlide(4)" alt="True Match">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie9.jpg?itok=a0DJdrst" style="width:100%" onclick="currentSlide(5)" alt="True Match">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="http://www.lebook.com/sites/default/files/styles/showcase_image_large/public/dp-masters-true-match-inter-us-single-couples-16.05.2014-copie3.jpg?itok=T0qmvx5A" style="width:100%" onclick="currentSlide(6)" alt="True Match">
+                        </div>
+                    </div>
+
+                    </div>
+             </div>
+        </section>
+        <footer>
+            <div id="brand-logos">
+                <img src="http://logonoid.com/images/benefit-logo.png" name="benefit-logo">
+                <img src="http://logos-download.com/wp-content/uploads/2016/12/Cargo_Cosmetics_logo-700x250.png" alt="cargo-logo">
+                <img src="http://2.bp.blogspot.com/-VVKTdukUhdw/VB7z5pVKNoI/AAAAAAAAEuY/arW_vXPMzTg/w1200-h630-p-k-no-nu/Logo%2BCovergirl.png" alt="covergirl-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dior_Logo.svg/2000px-Dior_Logo.svg.png" alt="dior-logo">
+                <img src="https://cdn.shopify.com/s/files/1/1299/9233/collections/structure-elf-1.png?v=1516358169" alt="elf-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Essie_logo.png" alt="essie-logo">
+                <img src="https://beta.mobo.com/sites/default/files/styles/blog_1100px_600px_/public/FENTY_FULL_LOGO_LOCKUP_BLACK.PNG?itok=qiaCDfB8" alt="fenty-logo">
+                <img src="http://www.prsformusicfoundation.com/wp-content/uploads/2016/09/Iman-Logo-Large-1024x439.png" alt="iman-logo">
+                <img src="https://witwitwoo.com/wp-content/uploads/2013/08/loreal-logo-wallpaper.png" alt="l'oreal-logo">
+                <img src="https://i.pinimg.com/originals/49/88/35/4988351a1476d530d0c2defb1f194c15.png" alt="mayballine-logo">
+                <img src="http://logo-logos.com/wp-content/uploads/2016/10/NYX_Cosmetics_logo.png" alt="nyx-logo">
+                <img src="http://www.passion.com.my/storage/upload/passion_trading/images/logo/Revlon.png" alt="revlon-logo">
+                <img src="http://www.sephora.com/contentimages/brands/smashbox/3990_logo_279.png" alt="smashbox-logo">
+            </div>
+        </footer>
+            <script src="functions.js"> </script>
+
+    </div>
+
+    <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/flat-design-multimedia-set-2/24/btn-grey-arrow-up-512.png" id="go-up"></a>
+</body>
+
+</html>

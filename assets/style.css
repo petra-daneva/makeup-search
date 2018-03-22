@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fd;
+    width:  100%;
+    margin: 0 auto;
+    color: dimgrey;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #container{
+    }
+    header img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    #search-bar{
+        width: 50%;
+    }
+
+    footer img{
+        margin: auto;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header img{
+        width: 600px;
+        height: auto;
+        margin: auto;
+        display: inline-block;
+    }
+
+    #search-bar{
+        width: 400px !important;
+    }
+
+    footer img{
+        margin: auto;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        height: auto;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #container{
+        width: 740px;
+    }
+    header img{
+        width: 680px;
+        height: auto;
+        margin: auto;
+        display: inline-block;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #container{
+        width: 980px;
+        background-color: yellow;
+    }
+    header img{
+        height: 300px;
+        width: auto;
+        margin: auto;
+        display: inline-block;
+        padding-left: 30%;
+    }
+
+    #search-bar{
+       width: 600px !important;
+    }
+    footer{
+        height: 300px;
+    }
+    footer img{
+        margin: auto;
+        display: inline-block;
+        height: 70px;
+        width: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #container{
+        width: 1170px;
+    }
+    header img{
+        height: 300px;
+        width: auto;
+        margin: auto;
+        display: inline-block;
+        padding-left: 40%;
+    }
+
+    #search-bar{
+        width: 700px !important;
+    }
+    footer{
+        height: 300px;
+    }
+    footer img{
+        margin: auto;
+        display: inline-block;
+        height: 85px;
+        width: auto;
+    }
+}
+
+header{
+    height: 200px;
+    background-color: #dbbda7;
+}
+
+footer{
+    height: inherit;
+    border-top: 10px double dimgrey;
+    padding-top: 30px;
+    background-color: #dbbda7;
+    clear: both;
+    position: relative;
+}
+
+#brand-logos{
+    padding: 10px;
+}
+
+div{
+    margin: auto;
+}
+img {
+    vertical-align: middle;
+}
+
+
+#search{
+    z-index: 100;
+    position: absolute;
+    width: inherit;
+    padding-left: 20%;
+    margin: 15px;
+}
+
+#search-bar{
+    width: inherit;
+}
+
+#search-suggestions{
+    height: auto;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding:15px;
+    border: 1px solid lightgray;
+
+}
+#search-suggestions ul{
+
+    margin-top: 0;
+}
+
+#search-suggestions ul li{
+    padding:15px 0;
+    list-style: none;
+}
+
+#search-suggestions ul li a{
+    text-decoration: none;
+    color: dimgrey;
+}
+#advanced-search{
+
+}
+
+
+#advanced-search-link{
+    text-decoration: none;
+    float: right;
+    display: inline-block;
+    color: inherit;
+}
+
+#content{
+    width: inherit;
+    z-index: 50;
+    background-color: white;
+    padding:150px 20px;
+
+}
+#logo{
+    margin: auto;
+    display: inline-block;
+}
+input[type=text] {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: white;
+    background-image: url("https://www.shareicon.net/data/512x512/2015/10/03/110917_search_512x512.png");
+    background-size: 45px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search-suggestions{
+    width: inherit;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+#gallery {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#go-up{
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
